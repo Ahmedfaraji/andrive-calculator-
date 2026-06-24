@@ -4,7 +4,7 @@ st.set_page_config(page_title="حاسبة أندرايف", layout="centered")
 st.title("🚕 حاسبة فاتورة أندرايف")
 
 price = st.number_input("الأجرة د.م", min_value=10.0, value=70.0, step=1.0)
-commission_rate = st.slider("نسبة عمولة أندرايف %", 5, 25, 10.9, step=0.1)
+commission_rate = st.slider("نسبة عمولة أندرايف %", 5.0, 25.0, 10.9, step=0.1)
 
 commission = price * (commission_rate / 100)
 vat = commission * 0.20
